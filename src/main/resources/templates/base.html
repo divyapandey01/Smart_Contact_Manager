@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        th:fragment="parent(content,title,script)"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Base Page</title>
+</head>
+<body>
+<!--common header-->
+<div data-th-replace="navbar :: navbar"></div>
+<!--main content-->
+<div class="p-4">
+    <section data-th-replace="${content}"></section>
+</div>
+<!--common footer-->
+<footer class="p-4">Footer- Learn code with Divya</footer>
+</body>
+</html>
